@@ -1,0 +1,78 @@
+<header class="bg-blue-500 p-4 text-white">
+  <!-- Container for layout -->
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Brand Name -->
+    <div class="text-xl font-bold">Cricketplush</div>
+
+    <!-- Navigation Links -->
+
+    <nav class="flex space-x-4">
+      <a [routerLink]="'/home'" href="#" class="hover:underline">Home</a>
+      <a [routerLink]="'/live'" href="#" class="hover:underline">Live</a>
+      <a [routerLink]="'/history'" href="#" class="hover:underline">History</a>
+      <a [routerLink]="'/points'" href="#" class="hover:underline">Points</a>
+    </nav>
+    <div></div>
+  </div>
+</header>
+<div class="px-16 py-6">
+  <router-outlet></router-outlet>
+</div>
+
+  
+  <footer class="bg-gray-800 text-white p-8">
+    <div class="container mx-auto ">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Footer Section 1 -->
+        <div class="" style="border-right: 3px solid #f4f2f2;">
+          <h3 class="text-lg font-bold mb-4 text-center">About Us</h3>
+          <p class="text-sm text-justify " style="padding: 20px;">CricketPlush is your go-to online platform for 
+            real-time cricket scores, delivering a seamless and immersive experience
+             for cricket enthusiasts around the world. Our website is designed with a 
+             singular purpose in mind – to keep you updated with the latest scores from
+              the world of cricket, ensuring you never miss a moment of the game.</p>
+          </div>
+    
+        <!-- Footer Section 2 -->
+        <div style="border-right: 3px solid #f4f2f2;">
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a [routerLink]="'/home'" href="#" class="hover:underline">Home</a></li>
+            <li><a  [routerLink]="'/live'" href="#" class="hover:underline">Live</a></li>
+            <li><a [routerLink]="'/history'" href="#" class="hover:underline">History</a></li>
+            <li><a [routerLink]="'/points'" href="#" class="hover:underline">Points</a></li>
+          </ul>
+        </div>
+        
+        <!-- Footer Section 3 -->
+        <div style="border-right: 3px solid #f4f2f2;">
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <p class="text-sm">123 Main Street</p>
+          <p class="text-sm">Cityville, State</p>
+          <p class="text-sm">Email: infgmail.com</p>
+          <p class="text-sm">Phone: +1 (123) 456-7890</p>
+        </div>
+        
+        <!-- Footer Section 4 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-gray-500 transition duration-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-5.25 0-9.5-4.25-9.5-9.5S6.75 1 12 1s9.5 4.25 9.5 9.5-4.25 9.5-9.5 9.5zM12 7c-.83 0-1.5.67-1.5 1.5S11.17 10 12 10s1.5-.67 1.5-1.5S12.83 7 12 7zm0 3.75c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-500 transition duration-300">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-5.25 0-9.5-4.25-9.5-9.5S6.75 1 12 1s9.5 4.25 9.5 9.5-4.25 9.5-9.5 9.5zM16.5 7h-1.75c-.19 0-.37.06-.53.15.02.04.03.09.05.14.27.46.42.99.42 1.51s-.15 1.05-.42 1.51c-.02.05-.03.1-.05.14.16.09.34.15.53.15h1.75v2h-3.29c-.15 0-.29.06-.39.15-.47.47-1.09.79-1.76.9V13.5h2v1h-2V17H12v-1.5h-1.5V13.5H11v-.6c-.64-.14-1.23-.43-1.73-.81l-.14-.11V13.5h-2v-2h1.55c-.09-.47-.14-.96-.14-1.47s.05-1 .14-1.47H6V7h2.04c.09-.18.21-.35.35-.5H6V4.5h2.75c.38-.57.86-1.06 1.41-1.41l.11-.09V1h2v2.04c.25.02.49.06.73.11l.19.05.17.07c.21.1.41.22.59.36.01.02.03.03.04.05l.1.1c.23.26.43.54.61.84l.09.16.08.2c.06.16.12.33.15.5H18V7h-1.5zM12 4.5h-1.75c-.2 0-.37.07-.53.15-.03.04-.05.09-.08.13.15.28.29.56.42.85.1.23.2.47.29.71.1.33.19.67.26 1h2.52c.07-.33.16-.67.26-1 .09-.24.19-.48.29-.71.12-.28.25-.56.39-.84a4.62 4.62 0 0 1-.54-.16c-.12-.05-.23-.11-.35-.16A4.74 4.74 0 0 1 12 4.5z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
